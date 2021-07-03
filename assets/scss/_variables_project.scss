@@ -4,3 +4,52 @@ Add styles or override variables from the theme here.
 
 */
 
+.no-bullets {
+    list-style: none;
+}
+
+.what-we-are-wrapper {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+
+.what-we-are-wrapper div {
+    text-align: center;
+}
+
+.what-we-are-wrapper h1 {
+    color: #d11242;
+}
+
+.what-we-are-wrapper ul li p {
+    font-size: x-small;
+}
+
+// paypal btns
+#btns-container {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%
+}
+
+.ppal-btn .membership-label {
+    display: flex;
+    justify-content: center;
+}
+
+.ppal-btn {
+    border: 1px solid darkgrey;
+    margin: 5rem;
+    padding: 2rem;
+}
+
+
+.membership-level {
+    font-weight: bold;
+    width: 100%;
+    border: solid;
+}

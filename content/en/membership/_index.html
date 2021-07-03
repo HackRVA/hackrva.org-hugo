@@ -1,0 +1,109 @@
+---
+title: Join HackRVA
+linkTitle: Membership
+menu:
+  main:
+    weight: 10
+
+---
+
+
+{{< blocks/cover title="Become a Member" image_anchor="bottom" height="min" >}}
+
+
+
+{{< /blocks/cover >}}
+
+{{% blocks/lead %}}
+<h1>
+  Not sure about becoming a member?
+</h1>
+
+<ul class="no-bullets">
+  <li>Review our  <a href="https://wiki.hackrva.org/index.php/Terms_and_Conditions">terms and conditions</a></li>
+  <li>Review our <a href="https://wiki.hackrva.org/images/1/12/HackrvaMembershipAgreement.pdf">membership agreement</a></li>
+  <li>Email us with any questions – <a href="mailto:info@hackrva.org">info@hackrva.org</a></li>
+</ul>
+
+{{% /blocks/lead %}}
+
+
+{{< blocks/section color="white" >}}
+<h1>Membership</h1>
+
+<p>
+  We currently use subscription services through PayPal which gives members the ability to easily manage their own membership. Please contact us for an alternate method if you are unable to use PayPal.
+</p>
+
+<br/>
+<ul class="no-bullets">
+  <li>
+    <strong>Standard:</strong> 24/7 building access + 1 parking pass – $35/month
+  </li>
+  <li>
+    <strong>Premium:</strong> 24/7 building access + 1 parking pass + onsite storage container – $50/month
+  </li>
+</ul>
+
+
+<div id="btns-container">
+  <div class="ppal-btn">
+    <div class="membership-label">
+      Standard $35
+    </div>
+    <div id="paypal-button-container"></div>  
+  </div>
+  
+<div id="a-dumb-space">
+
+</div>
+
+<div class="ppal-btn">
+    <div class="membership-label">
+      Premium $50
+     </div>
+     <div id="premium-paypal-button-container"></div>  
+  </div>
+</div>
+
+<script src="https://www.paypal.com/sdk/js?client-id=ATa_wug0C9pxWoVpedyzVd6_oR30_nP_0l6H9JO4xekeGkuDPn3FWGwnjpUpLLxyQMVDWjJr8IHDZMfo&amp;vault=true&amp;intent=subscription&amp;disable-funding=credit,card" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          'plan_id': 'P-6VF70733P87878006MA67KCI'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID);
+      }
+  }).render('#paypal-button-container');
+  
+    paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          'plan_id': 'P-3AS319493S062904LMA67KNY'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID);
+      }
+  }).render('#premium-paypal-button-container');
+</script>
+
+{{< /blocks/section >}}
+
+
+<iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1600%20E%20Roseneath%20Rd%20Richmond,%20va%2023231+(HackRVA)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
